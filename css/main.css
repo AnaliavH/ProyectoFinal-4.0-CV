@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #124f88;
+    --btn-color: #26547C;
+    --body-color:linear-gradient(to bottom,  #2b5876, #4e4376);
+    --navbar-color:#01161E;
+    --menu-mobile-background-color:#4e4376;
+    --text-color: white;
+    --text-color-exito: #306B34;
+    --link-hover-color:#5C5D8D;
+    --experiencia-fecha-color:#E8AA14;
+    --link-active-color:#EEEFA8;
+    --theme-color:white;
+    --habilidades-color:linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+body{
+    background-color: var(--theme-color);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 90px;
+}
+
+.horizontal-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+ }
+ 
+ .vertical-padding {
+    padding-top: 70x;
+    padding-bottom: 70px;
+ }
+
+ @media (max-width: 768px) {
+    .horizontal-padding {
+        padding-left: 25px;
+        padding-right: 25px;
+     }
+     
+     .vertical-padding {
+        padding-top: 25x;
+        padding-bottom: 25px;
+     }
+ }

@@ -1,0 +1,108 @@
+
+.info-adicional-body {
+    background: var(--body-color);
+    color: var(--text-color);
+    padding: 30px 0;
+    margin: 20px auto;
+    display: none;
+}
+
+.btnInfoAdicional {
+    background-color: var(--btn-color); 
+    color:  var(--text-color);
+    border: none;
+    font-size: 28px;
+    padding: 0.5em 1em; /*relativo al tamaño de fuente*/
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.btnInfoAdicional:hover {
+    filter: brightness(130%);
+}
+
+.info-adicional p, .info-adicional ul {
+    margin: 0;
+    padding: 0;
+}
+
+.info-adicional p {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--experiencia-fecha-color);
+    margin-bottom: 10px;
+}
+
+.info-adicional li{
+    font-size: 18px;
+}
+
+.info-adicional-detalle-grid {
+    display: grid;
+    gap: 20px 10px;
+    padding: 10px;
+    justify-content: left;    
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.info-adicional-detalle-idiomas {
+    grid-area: idiomas;
+}
+
+.info-adicional-detalle-form-academica {
+    grid-area: form-academica;
+}
+
+.info-adicional-detalle-form-adicional {
+    grid-area: form-adicional;
+}
+
+.info-adicional-detalle-grid {
+    display: grid;
+    grid:
+        "idiomas        .       "         auto
+        ".        form-academica"         auto       
+        ".        form-adicional" auto/
+        
+        1fr            1fr;
+    align-items: start;    
+
+}
+
+.idiomas-list, .formacion-academica-list, .formacion-adicional-list {
+    list-style: none;
+}
+
+.info-adicional-body_activo {
+    display: block;
+}
+
+
+@media (max-width: 768px){
+
+    .info-adicional-detalle-grid{
+        display: block;
+        padding:25px
+    }
+
+    .info-adicional p {
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 15px;
+    }
+    
+    .info-adicional li{
+        font-size: 15px;
+    }
+
+    .btnInfoAdicional {
+        font-size: 20px;
+    }
+
+}
+
+
+

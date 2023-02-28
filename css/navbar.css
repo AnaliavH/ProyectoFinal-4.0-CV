@@ -1,0 +1,136 @@
+
+.header {
+    background-color: var(--navbar-color);
+    height:80px;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left:0;  
+    z-index: 1000;  
+}
+
+.nav {
+    display:flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;   
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Logo */
+.logo {
+    display: flex; 
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0 40px;
+ }
+ 
+ .logo img {
+    border-radius: 50%;
+    margin-right: 10px;
+    line-height: 80px;
+ }
+
+/* --------------------------- */
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+ 
+.nav-menu-link:hover, .nav-menu-link_active {
+    background-color: var(--link-hover-color);
+    color: var(--link-active-color);
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;        
+}
+
+@media (max-width: 768px){
+
+    body{
+         padding-top: 80px;
+    }
+
+    .header {        
+        height:60px;    
+    }
+   
+    .logo {
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 30px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: var(--menu-mobile-background-color);
+        position: fixed;
+         top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item {        
+        line-height: 70px;    
+        padding: 0;
+    }
+
+    .nav-menu-link {
+        padding: 0;
+    }
+    
+    .nav-menu-link:hover, .nav-menu-link_active {
+        background:none;
+        color: var(--link-active-color);
+        
+    }
+    
+    .nav-toggle {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .nav-menu_visible {
+        left:0;
+    }
+   
+    .nav-toggle:focus:not(:focus-visible) {
+       outline: none;
+   }
+   }
+

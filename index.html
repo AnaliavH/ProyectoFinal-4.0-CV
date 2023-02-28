@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CV - Proyecto Integrador 4.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Iconos-->
+        <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+        <link rel="manifest" href="imagenes/site.webmanifest">
+        <!---------------------------------------->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/perfil.css">
+        <link rel="stylesheet" href="css/info-adicional.css">
+        <link rel="stylesheet" href="css/experiencia.css">
+        <link rel="stylesheet" href="css/habilidades.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5cdc5429e2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="#" class="logo nav-link">
+                    <img 
+                       height="50" 
+                       width="50" 
+                       src="imagenes/foto.png" 
+                       alt="front-end developer"
+                    />
+                    <div>
+                        María Gutierrez<br />
+                        Front-End Developer
+                    </div>
+                </a>
+                <button class="nav-toggle" id= "nav-toggle" area-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-menu-item"><a href="#perfil" class="nav-menu-link nav-link">Perfil</a></li>
+                    <li class="nav-menu-item"><a href="#experiencia" class="nav-menu-link nav-link">Experiencia</a></li>
+                    <li class="nav-menu-item"><a href="#habilidades" class="nav-menu-link nav-link">Habilidades</a></li>
+                    <li class="nav-menu-item"><a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--------- Perfil --------------------------------->
+        <div class="horizontal-padding vertical-padding">
+            <section class="perfil" id="perfil">
+                <div class="info-perfil">
+                   <h1 class="titulo-perfil">Hola, soy <br />María Gutierrez</h1>
+                   <p class="descripcion-perfil">
+                       Desarrolladora front-end, con experiencia en varios lenguajes de programación. Gestión de proyectos en equipo y resolución de problemas de forma independiente.
+                   </p>
+                   <a class="btn-perfil" href="/CV-Maria Gutierrez.pdf" download>
+                      Descargar CV
+                   </a>
+                </div>
+                <div class="perfil-img-section">
+                   <img class="perfil-img" src="imagenes/foto.png" alt="front-end developer">
+                </div>
+            </section>
+        </div>
+        <!----------------------------------------------------->
+        <!--------- Experiencia --------------------------------->
+        <div class="vertical-padding">
+            <section class="experiencias" id="experiencia">
+                <div class="experiencias-body">
+                    <h2 class="experiencias-titulo">Experiencia</h2>
+                     <div class="experiencias-grid">
+                        <div class="vacio"></div>
+                        <div class="linea"></div>
+                        <div class="experiencia">
+                            <div class="experiencia-fecha">Marzo 2020 - Diciembre 2021</div>
+                            <div class="experiencia-empresa">Top Developers S.A.</div>  
+                            <div class="experiencia-puesto">Desarrollador front-end</div>
+                            <div class="experiencia-descripcion">Aplicación de estándares de diseño, codificación y documentación.</div>
+                        </div>
+                        <div class="experiencia experiencia_izq">
+                            <div class="experiencia-fecha">Mayo 2018- Enero 2020</div>
+                            <div class="experiencia-empresa">Black Data</div>  
+                            <div class="experiencia-puesto">Desarrollador de aplicaciones web</div>
+                            <div class="experiencia-descripcion">Realización de pruebas para la detección de errores de aplicaciones. Monitorización y testeo del funcionamiento de apps web. Análisis de necesidades, ejecutando el diseño de componentes visuales.</div>
+                        </div>
+                        <div class="linea"></div>
+                        <div class="vacio"></div>
+                     </div> 
+                </div>
+            </section>
+        </div>
+        <!----------------------------------------------------->
+        <!--------- Habilidades --------------------------------->
+        <div class="horizontal-padding vertical-padding">
+            <section class="habilidades" id="habilidades">
+                <h2 class="titulo-habilidades">Habilidades</h2>
+                <ul class="habilidades-list">
+                    <li class="habilidades-item">CSS</li>
+                    <li class="habilidades-item">HTML</li>
+                    <li class="habilidades-item">Node.js</li>
+                    <li class="habilidades-item">Javascript</li>
+                </ul>
+            </section>
+        </div>
+        <!----------------------------------------------------->
+        <!------Información adicional----------------------------->
+        <div class="vertical-padding">                 
+            <section class="info-adicional" id="info-adicional">
+                <button type="button" class="btnInfoAdicional" id="btnInfoAdicional" aria-label="Mostrar Información Adicional">Información Adicional</button>                   
+                <div class="info-adicional-body">
+                    <div class="info-adicional-detalle-grid">
+                        <div class="info-adicional-detalle-idiomas">
+                            <p class="contacto-label">Idiomas</p>
+                            <ul class="idiomas-list">
+                                <li class="idiomas-item"> <span>Español:</span> idioma nativo</li>
+                                <li class="idiomas-item"> <span>Inglés:</span> avanzado</li>
+                            </ul>
+                        </div>
+                        <div class="info-adicional-detalle-form-academica">
+                            <p class="contacto-label">Formación académica</p>
+                            <ul class="formacion-academica-list">
+                                <li class="formacion-academica-item"> <span>Analista programador</span></li>
+                                <li class="formacion-academica-item"> <span>Analista de Sistemas de Computación</span></li>
+                            </ul>
+                        </div>
+                        <div class="info-adicional-detalle-form-adicional">
+                            <p class="contacto-label">Formación adicional</p>
+                            <ul class="formacion-adicional-list">
+                                <li class="formacion-adicional-item"> <span>Desarrollo Full-Stack:</span> Front-End/Back-End</li>
+                                <li class="formacion-adicional-item"> <span>Java Spring</span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!----------------------------------------------------->
+        <!------Contacto----------------------------->
+        <div class="horizontal-padding vertical-padding">
+            <section class="contacto" id="contacto">
+                <h2 class="contacto-titulo">Contacto</h2>
+                <div class="contacto-detalles">
+                    <div class="contacto-detalles-grupo">
+                        <p class="contacto-label">Dirección:</p>
+                        <p class="contacto-text">Rosario, Santa Fe, Argentina</p>
+                    </div>
+                    <div class="contacto-detalles-grupo">
+                        <p class="contacto-label">Email:</p>
+                        <p class="contacto-text">mariagutierrez@email.com</p>
+                    </div>
+                    <div class="contacto-detalles-grupo">
+                        <p class="contacto-text">Deje su mensaje y con gusto le responderé.</p>
+                    </div>        
+                </div>
+                <form class="contacto-form" id="contacto-form">
+                    <!-- Grupo Nombre -->
+                    <div class="contacto-form-grupo nombre">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input  type="text" class="form-input" name="nombre" id="nombre" placeholder="Nombre Apellido">                        
+                    </div>
+                    <!-- Grupo Email -->
+                    <div class="contacto-form-grupo email">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-input" name="email" id="email" placeholder="email@email.com">
+                    </div>
+                    <!-- Grupo Mensaje -->
+                    <div class="contacto-form-grupo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="8" placeholder="Escriba aquí el motivo de contacto"></textarea>
+                    </div>
+                    <!-- Botón Enviar-->
+                    <button type="submit" class= "btnEnviar" id="btnEnviar">Enviar</button>
+                    <p class="mensajeEnvio" id="mensajeEnvio"></p>
+                </form>
+                <nav class="social-nav">
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://www.google.com">
+                                <button class="i-social-facebook" area-label="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com">
+                                <button class="i-social-twitter" area-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/AnaliavH">
+                                <button class="i-social-github" area-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/contacto.js"></script>    
+        <script src="js/info-adicional.js"></script>           
+    </body>
+</html>
